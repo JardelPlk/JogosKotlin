@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PedraPapelTesouraFragment">
+
+    <TextView
+        android:id="@+id/pedraPapelTesouraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedra, papel ou tesoura"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pedraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedra"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/papelButton"
+        app:layout_constraintEnd_toStartOf="@id/papelButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pedraPapelTesouraTextView"/>
+
+    <Button
+        android:id="@+id/papelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papel"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@id/tesouraButton"
+        app:layout_constraintStart_toEndOf="@id/pedraButton"
+        app:layout_constraintTop_toBottomOf="@id/pedraPapelTesouraTextView"
+        />
+
+    <Button
+        android:id="@+id/tesouraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tesoura"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/papelButton"
+        app:layout_constraintTop_toBottomOf="@id/pedraPapelTesouraTextView"
+
+        />
+
+    <ImageView
+        android:id="@+id/userImageView"
+        android:layout_width="184dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toBottomOf="@id/pedraPapelTesouraTextView"
+        app:layout_constraintEnd_toStartOf="@id/oponentImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/papel"
+        />
+
+    <ImageView
+        android:id="@+id/oponentImageView"
+        android:layout_width="184dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toBottomOf="@id/pedraPapelTesouraTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/userImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tesoura"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

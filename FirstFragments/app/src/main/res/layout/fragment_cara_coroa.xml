@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CaraCoroaFragment">
+
+    <TextView
+        android:id="@+id/caraCoroaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caro ou Coroa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/caraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cara"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/caraCoroaTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caraCoroaTextView"/>
+
+    <Button
+        android:id="@+id/coroaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coroa"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/caraCoroaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/caraCoroaTextView"/>
+
+    <ImageView
+        android:id="@+id/caraCoroaImageView"
+        android:layout_width="184dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toTopOf="@+id/caraCoroaTextView"
+        app:layout_constraintEnd_toEndOf="@+id/caraCoroaTextView"
+        app:layout_constraintStart_toStartOf="@+id/caraCoroaTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coroa"/>
+
+    
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

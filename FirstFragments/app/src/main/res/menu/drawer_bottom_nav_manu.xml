@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item
+        android:id="@+id/caraCoroaFragment"
+        android:title="Cara ou coroa"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"/>
+
+    <item
+        android:id="@+id/pedraPapelTesouraFragment"
+        android:title="Pedra, papel ou tesoura"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"/>
+
+    <item
+        android:id="@+id/bolinhaCopoFragment"
+        android:title="Bolinha no copo"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"/>
+
+
+</menu>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuário"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/titleBolinhaCopoTextView"/>
+
+    <TextView
+        android:id="@+id/titleBolinhaCopoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estátisticas Bolinha no Copo"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/titleCaraCoroaTextView"/>
+
+    <TextView
+        android:id="@+id/vitoriasBolinhaCopoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitórias:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/titleBolinhaCopoTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleBolinhaCopoTextView"
+        app:layout_constraintEnd_toStartOf="@id/resultadoVitoriasBolinhaCopoTextView"
+        />
+
+    <TextView
+        android:id="@+id/resultadoVitoriasBolinhaCopoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitória"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/vitoriasBolinhaCopoTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleBolinhaCopoTextView"
+        app:layout_constraintEnd_toStartOf="@id/derrotasBolinhaCopoTextView"
+        />
+
+    <TextView
+        android:id="@+id/derrotasBolinhaCopoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derrotas:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/resultadoVitoriasBolinhaCopoTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleBolinhaCopoTextView"
+        app:layout_constraintEnd_toStartOf="@id/resultadoDerrotasBolinhaCopoTextView"
+        />
+
+    <TextView
+        android:id="@+id/resultadoDerrotasBolinhaCopoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derrotas"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/derrotasBolinhaCopoTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleBolinhaCopoTextView"
+        app:layout_constraintEnd_toEndOf="@id/titleBolinhaCopoTextView"
+        />
+
+    <TextView
+        android:id="@+id/titleCaraCoroaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estátisticas Cara ou Coroa"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/vitoriasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitórias:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/titleCaraCoroaTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleCaraCoroaTextView"
+        app:layout_constraintEnd_toStartOf="@id/resultadoVitoriasTextView"
+        />
+
+    <TextView
+        android:id="@+id/resultadoVitoriasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitória"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/vitoriasTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleCaraCoroaTextView"
+        app:layout_constraintEnd_toStartOf="@id/derrotasTextView"
+        />
+
+    <TextView
+        android:id="@+id/derrotasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derrotas:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/resultadoVitoriasTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleCaraCoroaTextView"
+        app:layout_constraintEnd_toStartOf="@id/resultadoDerrotasTextView"
+        />
+
+    <TextView
+        android:id="@+id/resultadoDerrotasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derrotas"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/derrotasTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleCaraCoroaTextView"
+        app:layout_constraintEnd_toEndOf="@id/titleCaraCoroaTextView"
+        />
+
+    <TextView
+        android:id="@+id/titlePedraPapelTesouraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estátisticas Pedra, Papel ou Tesoura"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultadoDerrotasTextView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/vitoriasPedraPapelTesouraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitórias:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/titlePedraPapelTesouraTextView"
+        app:layout_constraintTop_toBottomOf="@id/titlePedraPapelTesouraTextView"
+        app:layout_constraintEnd_toStartOf="@id/resultadoVitoriasPedraPapelTesouraTextView"
+        />
+
+    <TextView
+        android:id="@+id/resultadoVitoriasPedraPapelTesouraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitória"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/vitoriasPedraPapelTesouraTextView"
+        app:layout_constraintTop_toBottomOf="@id/titlePedraPapelTesouraTextView"
+        app:layout_constraintEnd_toStartOf="@id/derrotasPedraPapelTesouraTextView"
+        />
+
+    <TextView
+        android:id="@+id/empatesPedraPapelTesouraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empates:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultadoVitoriasPedraPapelTesouraTextView"
+        app:layout_constraintEnd_toStartOf="@id/resultadoEmpatesPedraPapelTesouraTextView"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/resultadoEmpatesPedraPapelTesouraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empates"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/empatesPedraPapelTesouraTextView"
+        app:layout_constraintTop_toBottomOf="@id/resultadoVitoriasPedraPapelTesouraTextView"
+        app:layout_constraintEnd_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/derrotasPedraPapelTesouraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derrotas:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/resultadoVitoriasPedraPapelTesouraTextView"
+        app:layout_constraintTop_toBottomOf="@id/titlePedraPapelTesouraTextView"
+        app:layout_constraintEnd_toStartOf="@id/resultadoDerrotasPedraPapelTesouraTextView"
+        />
+
+    <TextView
+        android:id="@+id/resultadoDerrotasPedraPapelTesouraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derrotas"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/derrotasPedraPapelTesouraTextView"
+        app:layout_constraintTop_toBottomOf="@id/titlePedraPapelTesouraTextView"
+        app:layout_constraintEnd_toEndOf="@id/titlePedraPapelTesouraTextView"
+        />
+    <!--<Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView"
+        app:layout_constraintStart_toStartOf="@+id/homeTextView"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        android:layout_marginTop="16dp"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
